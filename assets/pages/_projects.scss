@@ -1,0 +1,48 @@
+
+#projects {
+  background-color: gray;
+  height: 33vh;
+}
+
+#projects > h2 {
+  text-align: center;
+  padding: 2.5%;
+}
+
+#showcase-picture {
+  height: 20vh;
+  width: 90vh;
+  border-radius: 30%;
+  border: solid #D2F8EE;
+  background-color: #D2F8EE;
+}
+
+#showcase-text {
+  text-align: right;
+}
+
+#showcase-container {
+  border-top: 7px solid black;
+  border-bottom: 7px solid black;
+  padding: 20px;
+  height: 20vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@media screen and (min-width:376px) {
+  #projects {
+    height: 36vh;
+  }
+  
+  #showcase-picture {
+    height: 20vh;
+    width: 90vh;
+    border-radius: 30%;
+    border: solid #D2F8EE;
+    background-color: #D2F8EE;
+    margin-right: 15px;
+  } 
+}
+

@@ -1,0 +1,34 @@
+@import "assets/styles/_nav";
+@import "assets/styles/typography";
+@import "assets/styles/buttons.scss";
+@import "assets/styles/_reset";
+@import "assets/pages/_home";
+@import "assets/pages/about";
+@import "assets/pages/projects";
+@import "assets/pages/contact";
+
+
+
+
+
+
+body {
+  padding: 10%;
+  border: 1px solid black;
+
+  footer {
+    text-align: center;
+  }
+}
+
+
+
+
+
+@media screen and (min-width:376px) {
+body {
+  border: 1px solid red;
+  // min-width: 376px ;
+  // min-height: 836px;
+ }
+}

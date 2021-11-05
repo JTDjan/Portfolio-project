@@ -1,0 +1,87 @@
+
+#intro {
+  // background-color: royalblue;
+  height: 50vh;
+
+  display: grid;
+  grid-template-areas: 
+  "logo logo logo"
+  "logo logo logo"
+  "words words words"
+  "words words words"
+  ". button ."
+  ;
+  grid-template-columns: 10vh 25vh 10vh;
+}
+
+#landing-img {
+grid-area: logo;
+display: flex;
+justify-content: center;
+align-content:center;
+align-items: flex-end;
+img {
+  background-color: #e2ebe9;
+  border: 1px solid black;
+  border-radius: 45%;
+  text-align: center;
+}
+}
+
+.into-hero-words {
+    grid-area: words;
+    text-align: center;
+}
+
+#landing-button {
+  grid-area: button;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fa-arrow-circle-down {
+  font-size: 40px;
+}
+
+.intro-hero-words {
+  align-items: center;
+}
+
+@media screen and (min-width:376px) {
+  #intro {
+    height: 50vh;
+  
+    display: grid;
+    grid-template-areas: ". . . ."
+      ". . . ."
+      "words words logo logo"
+      "words words logo logo"
+      ". button . .";
+    
+      grid-template-columns: 2fr 1fr 2fr 1fr;
+      align-items: start;
+  }
+
+  #landing-img {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+    img {
+      background-size: 100px;
+      
+    }
+  }
+
+  .into-hero-words {
+    grid-area: words;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .fa-arrow-circle-down {
+    font-size: 57px;
+  }
+}

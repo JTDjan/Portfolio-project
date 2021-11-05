@@ -1,0 +1,377 @@
+#nav_mobile {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#nav_mobile a {
+  margin-right: 50px;
+}
+
+#nav_desktop {
+  display: none;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+}
+
+body {
+  min-width: 375px;
+  min-height: 812px;
+}
+
+@media screen and (min-width: 376px) {
+  #nav_desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #nav_desktop #nav-links ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30vh;
+  }
+  #nav_desktop #nav-links ul li {
+    list-style-type: none;
+    text-decoration: none;
+  }
+  #nav_desktop #nav-links ul li a {
+    text-decoration: none;
+    color: black;
+  }
+
+  #nav_mobile {
+    display: none;
+  }
+}
+* {
+  font-family: "Rubik", sans-serif;
+}
+
+#nav_mobile a i {
+  color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  background-color: #f0f8f6;
+}
+
+#intro {
+  height: 50vh;
+  display: grid;
+  grid-template-areas: "logo logo logo" "logo logo logo" "words words words" "words words words" ". button .";
+  grid-template-columns: 10vh 25vh 10vh;
+}
+
+#landing-img {
+  grid-area: logo;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: flex-end;
+}
+#landing-img img {
+  background-color: #e2ebe9;
+  border: 1px solid black;
+  border-radius: 45%;
+  text-align: center;
+}
+
+.into-hero-words {
+  grid-area: words;
+  text-align: center;
+}
+
+#landing-button {
+  grid-area: button;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fa-arrow-circle-down {
+  font-size: 40px;
+}
+
+.intro-hero-words {
+  align-items: center;
+}
+
+@media screen and (min-width: 376px) {
+  #intro {
+    height: 50vh;
+    display: grid;
+    grid-template-areas: ". . . ." ". . . ." "words words logo logo" "words words logo logo" ". button . .";
+    grid-template-columns: 2fr 1fr 2fr 1fr;
+    align-items: start;
+  }
+
+  #landing-img {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+  }
+  #landing-img img {
+    background-size: 100px;
+  }
+
+  .into-hero-words {
+    grid-area: words;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .fa-arrow-circle-down {
+    font-size: 57px;
+  }
+}
+#about {
+  background-color: darkgoldenrod;
+  height: 40vh;
+}
+
+#about-me-header {
+  text-align: center;
+}
+
+#skillset-header {
+  text-align: center;
+}
+
+#skillset-table {
+  display: grid;
+  grid-template-areas: "left1 . right1" "left2 . right2" "left3 . right3" "left4 . right4" "left5 . right5";
+  grid-template-columns: 2fr 1fr 2fr;
+  justify-items: center;
+}
+
+#skillset-table:nth-child(1) {
+  grid-area: left1;
+}
+
+#skillset-table:nth-child(2) {
+  grid-area: right1;
+}
+
+#skillset-table:nth-child(3) {
+  grid-area: left2;
+}
+
+#skillset-table:nth-child(4) {
+  grid-area: right2;
+}
+
+#skillset-table:nth-child(5) {
+  grid-area: left3;
+}
+
+#skillset-table:nth-child(6) {
+  grid-area: right3;
+}
+
+#skillset-table:nth-child(7) {
+  grid-area: left4;
+}
+
+#skillset-table:nth-child(8) {
+  grid-area: right4;
+}
+
+#skillset-table:last-child() {
+  grid-area: left5;
+}
+
+.skillset-table__icons {
+  font-size: 36px;
+}
+
+@media screen and (min-width: 376px) {
+  #about {
+    display: grid;
+    grid-template-areas: ". . . . . ." "Habout Habout . img img ." "about about . img img ." "Htable Htable . . . ." "table table table . . .";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .grid-habout {
+    grid-area: Habout;
+    height: 25px;
+  }
+
+  .grid-about {
+    grid-area: about;
+    height: 56px;
+  }
+
+  .grid-htable {
+    grid-area: Htable;
+    height: 25px;
+    text-align: left;
+  }
+
+  .grid-table {
+    grid-area: table;
+    height: 100px;
+  }
+
+  #about-me-header {
+    text-align: left;
+  }
+
+  #skillset-table {
+    display: grid;
+    grid-template-areas: "1 3 5 7 9" "2 4 6 8 .";
+    grid-template-columns: 2fr 1fr 1fr 1fr 2fr 1fr;
+    justify-items: center;
+  }
+
+  #skillset-table:nth-child(1) {
+    grid-area: 1;
+  }
+
+  #skillset-table:nth-child(2) {
+    grid-area: 2;
+  }
+
+  #skillset-table:nth-child(3) {
+    grid-area: 3;
+  }
+
+  #skillset-table:nth-child(4) {
+    grid-area: 4;
+  }
+
+  #skillset-table:nth-child(5) {
+    grid-area: 5;
+  }
+
+  #skillset-table:nth-child(6) {
+    grid-area: 6;
+  }
+
+  #skillset-table:nth-child(7) {
+    grid-area: 7;
+  }
+
+  #skillset-table:nth-child(8) {
+    grid-area: 8;
+  }
+
+  #skillset-table:last-child() {
+    grid-area: 9;
+  }
+
+  .skillset-table__icons {
+    font-size: 30px;
+  }
+}
+#projects {
+  background-color: gray;
+  height: 33vh;
+}
+
+#projects > h2 {
+  text-align: center;
+  padding: 2.5%;
+}
+
+#showcase-picture {
+  height: 20vh;
+  width: 90vh;
+  border-radius: 30%;
+  border: solid #D2F8EE;
+  background-color: #D2F8EE;
+}
+
+#showcase-text {
+  text-align: right;
+}
+
+#showcase-container {
+  border-top: 7px solid black;
+  border-bottom: 7px solid black;
+  padding: 20px;
+  height: 20vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@media screen and (min-width: 376px) {
+  #projects {
+    height: 36vh;
+  }
+
+  #showcase-picture {
+    height: 20vh;
+    width: 90vh;
+    border-radius: 30%;
+    border: solid #D2F8EE;
+    background-color: #D2F8EE;
+    margin-right: 15px;
+  }
+}
+#contact {
+  background-color: gold;
+  height: 22vh;
+}
+#contact #contact-header {
+  text-align: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+#contact #contact-icons {
+  color: black;
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 30px;
+  height: 5vh;
+  font-size: 50px;
+}
+#contact #contact-icons a {
+  text-decoration: none;
+}
+#contact h3 {
+  text-align: center;
+  padding: 10px;
+  margin-top: 8px;
+}
+#contact span {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  text-align: center;
+}
+
+@media screen and (min-width: 376px) {
+  #contact {
+    height: 28vh;
+  }
+  #contact #contact-header {
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  #contact #contact-icons {
+    margin-left: 100px;
+  }
+}
+body {
+  padding: 10%;
+  border: 1px solid black;
+}
+body footer {
+  text-align: center;
+}
+
+@media screen and (min-width: 376px) {
+  body {
+    border: 1px solid red;
+  }
+}
