@@ -34,14 +34,18 @@
 }
 
 #contact-icons {
-  color: black;
+  // color: black;
   display: flex;
   justify-content: space-evenly;
   margin-left: 30px;
   height: 5vh;
   font-size: 50px;
 
-  
+  .icons__css{
+    color: black;
+  }
+
+
 
   a {
     text-decoration: none;
