@@ -134,7 +134,6 @@ body {
   }
 }
 #about {
-  background-color: darkgoldenrod;
   height: 40vh;
 }
 
@@ -273,7 +272,6 @@ body {
   }
 }
 #projects {
-  background-color: gray;
   height: 33vh;
 }
 
@@ -319,7 +317,6 @@ body {
   }
 }
 #contact {
-  background-color: gold;
   height: 22vh;
 }
 #contact #contact-header {
@@ -370,10 +367,4 @@ body {
 }
 body footer {
   text-align: center;
-}
-
-@media screen and (min-width: 376px) {
-  body {
-    border: 1px solid red;
-  }
 }
